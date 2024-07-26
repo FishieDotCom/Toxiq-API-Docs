@@ -18,6 +18,8 @@ when loggin in using telegram you will need to obtain initData string that is ge
 
 assigned initData to LoginDto.OTP and send to the server
 
+##### if a user is not registed they will automatically get registered when their data is sent to this endpoint
+
 #### POST
         api.toxiq.xyz/api/Auth/TG_WEB_LOGIN
 ```        
