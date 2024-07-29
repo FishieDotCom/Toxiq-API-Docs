@@ -4,13 +4,11 @@ for now the main login endpoint is disabled as phone number support has not been
 
 #### POST
         api.toxiq.xyz/api/Auth/DebugLogin
-```        
-   public class LoginDto
-   {
-       public string PhoneNumber { get; set; } // set to string
-       public string OTP { get; set; } //set user otp
-   }
-```
+| Name        | Type   | Comment            | IsRequired |
+|-------------|--------|--------------------|------------|
+| PhoneNumber | string | DO NOT LEAVE EMPTY WRITE SOMETHING     | Yes        |
+| OTP         | string | Set user OTP       | Yes        |
+
 
 # Login Via Telegram
 
@@ -22,26 +20,18 @@ assigned initData to LoginDto.OTP and send to the server
 
 #### POST
         api.toxiq.xyz/api/Auth/TG_WEB_LOGIN
-```        
-   public class LoginDto
-   {
-       public string PhoneNumber { get; set; } // set to string
-       public string OTP { get; set; } //set initData obtained via tmajs.sdk
-   }
-```
+
+| Name        | Type   | Comment            | IsRequired |
+|-------------|--------|--------------------|------------|
+| PhoneNumber | string | DO NOT LEAVE EMPTY WRITE SOMETHING     | Yes        |
+| OTP         | string | Set initData obtained via tmajs.sdk       | Yes        |
 
 
 
 ## Login Response
 
-```
-    public class LoginResponse
-    {
-        public string token { get; set; }
+| Name  | Type   | Comment                                       |
+|-------|--------|-----------------------------------------------|
+| token | string | beare token to be used for when making calls to the api                                              |
+| IsNew | bool   | If true, take the user to the onboarding process |
 
-        /// <summary>
-        /// if is new then take the user to onboading process
-        /// </summary>
-        public bool IsNew { get; set; }
-    }
-```
