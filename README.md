@@ -1,9 +1,6 @@
 # Toxiq-API-Docs
 
-![Logo](https://github.com/FishieDotCom/Toxiq-API-Docs/blob/main/Images/api%20docs.jpg)
-
-documentation for the toxiq server api  
-currently running in dev mode
+![Logo](Images/api%20docs.jpg)
 
 
 # Endpoints

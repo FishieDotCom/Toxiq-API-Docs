@@ -1,3 +1,12 @@
+# Auth
+Toxiq has multiple ways to login.  
+
+![Logo](Images/auth.jpg)
+
+[OTP](#login-via-otp) is best to be used in apps  
+[TG](#login-via-telegram) is best for situations where you have access to the users Telegram Auth data. this endpoint takes advantage of Telegram passport
+
+
 # Login Via OTP
 
 for now the main login endpoint is disabled as phone number support has not been implimented
