@@ -15,7 +15,7 @@
 | IsReply     | bool         | Set as false                             | Yes        |
 | HasReplies  | bool         | Set as false                             | Yes        |
 | ReplyCount  | int          | Set 0                                    | Yes        |
-| MediaPath  | string       | base64 of image                                        | No        |
+| [MediaPath](#mediapath)   | string       | base64 of image                                        | No        |
 
 
 # Reply to Comment
@@ -34,7 +34,7 @@
 | IsReply     | bool      | Set as true                                  | Yes        |
 | HasReplies  | bool      | Set as false                                 | Yes        |
 | ReplyCount  | int       | Set 0                                        | Yes        |
-| MediaPath  | string       | base64 of image                                        | No        |
+| [MediaPath](#mediapath)  | string       | base64 of image                                        | No        |
 
 
 # Get Comments / Replies
@@ -58,6 +58,7 @@ when requesting replies for a comment set IsReply to true and set Id to parent c
 | Page   | int      | starts at 1 and not 0                                                                                       | Yes         |
 | Count  | int      | set to 30                                                                                      | Yes         |
 
+Page must always start at 1. Requesting for Page 0 will result in error
 
 its best to request 30 comments at a time and load more as needed
 
