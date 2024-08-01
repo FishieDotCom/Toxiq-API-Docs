@@ -39,11 +39,9 @@
 
 # Get Comments / Replies
 
-the request to get comments and replies for comments is almost the same.
-
-when requesting comments for a post set IsReply to false and set Id to post_ID.
-
-when requesting replies for a comment set IsReply to true and set Id to parent comment_ID.
+- the request to get comments and replies for comments is almost the same.
+- when requesting comments for a post set IsReply to false and set Id to post_ID.
+- when requesting replies for a comment set IsReply to true and set Id to parent comment_ID.
 
 #### POST
         api.toxiq.xyz/api/Comment/GetComments
@@ -58,12 +56,12 @@ when requesting replies for a comment set IsReply to true and set Id to parent c
 | Page   | int      | starts at 1 and not 0                                                                                       | Yes         |
 | Count  | int      | set to 30                                                                                      | Yes         |
 
-Page must always start at 1. Requesting for Page 0 will result in error
+- Page must always start at 1. Requesting for Page 0 will result in error
 
-its best to request 30 comments at a time and load more as needed
+- its best to request 30 comments at a time and load more as needed
 
 # Notes
 ### MediaPath 
-when calling get comments endpoint the MediaPath might be null or it will return the url for the file requested.
+- when calling get comments endpoint the MediaPath might be null or it will return the url for the file requested.
 
-when submitting comments devs can use the MediaPath to store image data. devs must ensure to only submit images that are jpeg and no larger then 240px 
+- when submitting comments devs can use the MediaPath to store image data. devs must ensure to only submit images that are jpeg and no larger then 240px 
