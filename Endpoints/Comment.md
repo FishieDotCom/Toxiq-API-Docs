@@ -1,4 +1,5 @@
 # Comment on a post
+![Logo](/Images/comment.jpg)
 
 #### POST
         api.toxiq.xyz/api/Comment/MakeComment

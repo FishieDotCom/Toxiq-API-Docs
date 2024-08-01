@@ -1,4 +1,6 @@
 # Mentions
+![Logo](/Images/mention.jpg)
+
 Toxiq uses markdown for all mentions 
 
 ```
