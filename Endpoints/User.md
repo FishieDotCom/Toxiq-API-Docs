@@ -43,7 +43,7 @@ this is reccomended as it would result in too much error to reconstruct a dto to
 | Values       | Details                |
 |--------------|------------------------|
 | Bio          | Max 64 char            |
-| ProfileColor | must be approved [Color](/Color.md) |
+| ProfileColor | must be approved [Color](/Endpoints/Color.md) |
 
 #### POST
         api.toxiq.xyz/api/User/EditUserProfile

@@ -4,15 +4,15 @@ currently running in dev mode
 
 
 # Endpoints
-- [Auth](/Login.md)
-- [User](/User.md)
-- [Comment](/Comment.md)
-- [Color](/Color.md)
+- [Auth](/Endpoints/Login.md)
+- [User](/Endpoints/User.md)
+- [Comment](/Endpoints/Comment.md)
+- [Color](/Endpoints/Color.md)
 
 
 ## Mentions
 Toxiq comments has support for mentioning users  
-for more details refer to [Mention Docs](/Mentions.md)
+for more details refer to [Mention Docs](/Docs/Mentions.md)
 
 ## Auth Details
 
