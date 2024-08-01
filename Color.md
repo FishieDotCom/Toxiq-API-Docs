@@ -11,12 +11,12 @@ calling the endpoint will return an array of allowed colors
 
 ```
 [
-  { "Hex": "#8a8a8a" },
-  { "Hex": "#5a189a" },
-  { "Hex": "#800e13" },
-  { "Hex": "#375191" },
-  { "Hex": "#ff4bb4" },
-  { "Hex": "#588157" }
+  { "Hex": "#8a8a8a" }, //emo gray
+  { "Hex": "#5a189a" }, //royal purple
+  { "Hex": "#800e13" }, //bloody red
+  { "Hex": "#375191" }, //4 blue
+  { "Hex": "#ff4bb4" }, //barbie pink
+  { "Hex": "#588157" } //forest green
 ]
 
 ```
