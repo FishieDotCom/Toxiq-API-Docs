@@ -54,18 +54,10 @@ when requesting replies for a comment set IsReply to true and set Id to parent c
 |--------|----------|-----------------------------------------------------------------------------------------------------|------------|
 | Id     | Guid     | either post_ID or comment_ID                                                                        | Yes        |
 | IsReply| bool     | If true, set Id to parent comment Id; else set Id to post Id                                        | Yes        |
-| Sort   | SortType | Default is 0                                                                                        | Yes        |
+| Sort   | [SortType](/Enums/SortType.md) | Default is 0                                                                                        | Yes        |
 | Page   | int      | starts at 1 and not 0                                                                                       | Yes         |
 | Count  | int      | set to 30                                                                                      | Yes         |
 
-### SortType
-
-| Value | Name         | Comment      |
-|-------|--------------|--------------|
-| 0     | New          |              |
-| 1     | Controversial| Most Dislike |
-| 2     | Hot          | Most Comment |
-| 3     | Top          | Most Liked   |
 
 its best to request 30 comments at a time and load more as needed
 
