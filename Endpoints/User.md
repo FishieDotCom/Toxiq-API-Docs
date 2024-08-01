@@ -1,5 +1,6 @@
 # User
 
+![Logo](/Images/user.jpg)
 
 ## Check Username
 
