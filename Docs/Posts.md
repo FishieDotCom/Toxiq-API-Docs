@@ -9,7 +9,7 @@ this is the simplest way to load a post with the post id being stored directly i
 ## Post with comment
 ```chat.toxiq.xyz/posts/{POST_ID}?comment={commentid}```  
 when Toxiq sends users a comment notification this is how the url is structured   
-Comments api has added a new method to handle the added commentid object [ReadMore]()  
+Comments api has added a new method to handle the added commentid object [ReadMore](/Endpoints/Comment.md#getcomment)  
 - its best to request this endpoint before loading the rest of the comments.   
 - make sure to display this comment on the top so users are able to see it easily.  
 - dev must also ensure there are no duplicates when loading the rest of the comments
