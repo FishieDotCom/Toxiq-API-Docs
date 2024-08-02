@@ -16,6 +16,9 @@
 Toxiq comments has support for mentioning users  
 for more details refer to [Mention Docs](/Docs/Mentions.md)
 
-## Auth Details
+## Null Handling
+[Default Values](/Docs/Default.md)
+
+## Auth Schema
 
 Authorization: Bearer {TOKEN}
