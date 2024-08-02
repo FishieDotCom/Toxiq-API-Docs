@@ -1,4 +1,4 @@
-# Colors
+# Colors API
 ![Logo](/Images/Color.jpg)
 
 Colors are a important part of toxiq as it allows users to express themselves

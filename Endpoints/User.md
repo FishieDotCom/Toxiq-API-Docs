@@ -1,4 +1,4 @@
-# User
+# User API
 
 ![Logo](/Images/user.jpg)
 

@@ -1,4 +1,4 @@
-# Comment on a post
+# Comments API
 ![Logo](/Images/comment.jpg)
 
 #### POST
@@ -60,6 +60,12 @@
 - Page must always start at 1. Requesting for Page 0 will result in error
 
 - its best to request 30 comments at a time and load more as needed
+
+### GetComment
+this method is for requesting a single comment
+
+#### GET
+        api.toxiq.xyz/api/Comment/GetComment/{COMMENT_ID}
 
 # Notes
 ### MediaPath 

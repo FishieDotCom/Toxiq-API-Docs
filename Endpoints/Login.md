@@ -1,4 +1,4 @@
-# Auth
+# Auth API
 
 ![Logo](/Images/auth.jpg)
 
