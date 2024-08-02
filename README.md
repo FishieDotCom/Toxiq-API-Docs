@@ -9,6 +9,8 @@
 - [Comment](/Endpoints/Comment.md)
 - [Color](/Endpoints/Color.md)
 
+## Posts
+[Read Posts](/Docs/Posts.md)
 
 ## Mentions
 Toxiq comments has support for mentioning users  
