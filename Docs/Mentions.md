@@ -5,9 +5,6 @@ Toxiq uses markdown for all mentions
 
 ```
 [@WhoIsFishie](user:WhoIsFishie) //implimented
-[@WhoIsFishie](emoji:🟥🕷️) //pending
-[@WhoIsFishie](id:deb1faf7-e3ef-4c5c-90b6-0abf8c45) //pending
-
 ```
 
 ### Example
