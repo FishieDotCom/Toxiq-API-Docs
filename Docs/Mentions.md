@@ -4,13 +4,13 @@
 Toxiq uses markdown for all mentions 
 
 ```
-[@WhoIsFishie](user:WhoIsFishie)
+[@WhoIsFishie](user:🟥🕷️)
 ```
 
 ### Example
 
 input  
-```Hey [@WhoIsFishie](user:WhoIsFishie) this is a test comment```
+```Hey [@WhoIsFishie](user:🟥🕷️) this is a test comment```
 
 output  
 ```Hey @WhoIsFishie this is a test comment```
@@ -25,7 +25,6 @@ there will be a few bugs with old telegram comments where it uses the following 
 ```Hey #WhoIsFishie this is a test comment```   
 
 the fix for this is sending every comment through the following method
-
 
 ``` c#
 static string ConvertToMarkdown(string input)
@@ -43,6 +42,8 @@ static string ConvertToMarkdown(string input)
 
 output  
 ```Hey [@WhoIsFishie](user:WhoIsFishie) this is a test comment```
+
+this is to add backwards compatibility as old comments used username as key. New mentions would use users Emoji as the key
 
 ## Mention Behavior
 its best to show existing users in the comment section as well as the post OP when user tries to mention someone.  

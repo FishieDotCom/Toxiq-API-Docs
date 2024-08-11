@@ -53,10 +53,13 @@ this is reccomended as it would result in too much error to reconstruct a dto to
 
 ## GetUser
 
-this endpoint will return a requested user's profile
+this endpoint will return a requested user's profile  
 
+>you can also get users profile by using their emoji but the emoji must be url encoded  
+>emoji is suggested to be used when pulling profile via mention
 #### GET
         api.toxiq.xyz/api/User/GetUser/{USERNAME}
+        api.toxiq.xyz/api/User/GetUser/{URLENCODED_EMOJI}
 
 | Result       | Details                 |
 |--------------|-------------------------|
