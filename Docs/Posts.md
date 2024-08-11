@@ -23,19 +23,19 @@ for now this method **[does not](https://docs.telegram-mini-apps.com/platform/st
 example code
 
 ``` C#
-            var uri = Navigation.ToAbsoluteUri(Navigation.Uri);
-            var query = HttpUtility.ParseQueryString(uri.Query);
+var uri = Navigation.ToAbsoluteUri(Navigation.Uri);
+var query = HttpUtility.ParseQueryString(uri.Query);
 
-            //by default expect the PostId to be in the url but incase
-            //tgWebAppStartParam is in the url extract the PostId value
-            try
-            {
-                PostId = Guid.Parse(query["tgWebAppStartParam"]);
-            }
-            catch
-            {  }
+//by default expect the PostId to be in the url but incase
+//tgWebAppStartParam is in the url extract the PostId value
+try
+{
+    PostId = Guid.Parse(query["tgWebAppStartParam"]);
+}
+catch
+{  }
 
-            _post = await ApiService.PostService.GetPost(PostId);
+_post = await ApiService.PostService.GetPost(PostId);
 ```
 
 

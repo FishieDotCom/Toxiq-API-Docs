@@ -11,13 +11,13 @@
 - [Posts](/Endpoints/Posts.md)
 
 ## Design Guidlines
-Read the following [Guidlines](/Docs/Design.md) before 
+Read the following [Guidlines](/Docs/Design.md) before starting client development
 
 ## Posts
-[Read Posts](/Docs/Posts.md)  
+[Handle Post Url](/Docs/Posts.md)  
 [Posts API](/Endpoints/Posts.md)
 
-## Media
+## Media  
 [Uploading Media](/Docs/Media.md)
 
 ## Voting

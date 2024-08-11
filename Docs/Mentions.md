@@ -4,7 +4,7 @@
 Toxiq uses markdown for all mentions 
 
 ```
-[@WhoIsFishie](user:WhoIsFishie) //implimented
+[@WhoIsFishie](user:WhoIsFishie)
 ```
 
 ### Example
@@ -28,19 +28,17 @@ the fix for this is sending every comment through the following method
 
 
 ``` c#
+static string ConvertToMarkdown(string input)
+{
+    // Use Regex to find the pattern #username
+    string pattern = @"#(\w+)";
+    string replacement = @"[@$1](user:$1)";
 
-    static string ConvertToMarkdown(string input)
-    {
-        // Use Regex to find the pattern #username
-        string pattern = @"#(\w+)";
-        string replacement = @"[@$1](user:$1)";
+    // Replace the pattern with the markdown format
+    string result = Regex.Replace(input, pattern, replacement);
 
-        // Replace the pattern with the markdown format
-        string result = Regex.Replace(input, pattern, replacement);
-
-        return result;
-    }
-
+    return result;
+}
 ```
 
 output  
@@ -49,6 +47,3 @@ output
 ## Mention Behavior
 its best to show existing users in the comment section as well as the post OP when user tries to mention someone.  
 future updates will add endpoints to get friends to display when a user tries to mention someone.
-
-### NOTE
-while emoji and id support is pending its best to only focus on adding username support for now

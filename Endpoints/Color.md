@@ -11,7 +11,7 @@ calling the endpoint will return an array of allowed colors
 - its important to only give users the option to select allowed colors  
 - **do not call this endpoint more then once an app lifecycle** as this list wont change
 
-```
+```json
 [
   { "Hex": "#8a8a8a" }, //emo gray
   { "Hex": "#5a189a" }, //royal purple
