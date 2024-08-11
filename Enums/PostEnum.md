@@ -23,10 +23,10 @@
 
 if there is no media make sure to always mark it as non
 
-| Value | Name   | Comment       |
-|-------|--------|---------------|
-| 0     | Non    | No media      |
-| 1     | Image  | Image file    |
-| 2     | Video  | Video file    |
-| 3     | Audio  | Audio file    |
-| 4     | Sticker| Stickers must use MediaId instead if MediaPath when submitting |
+| Value | Name   |Is Supported|
+|-------|--------|------------|
+| 0     | Non    |Yes
+| 4     | Sticker|Yes
+| 1     | Image  |Yes
+| ~~2~~     | ~~Video~~  |No
+| ~~3~~     | ~~Audio~~  |No
