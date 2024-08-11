@@ -3,39 +3,17 @@
 
 #### POST
         api.toxiq.xyz/api/Comment/MakeComment
-        
-| Name        | Type         | Comment                                  | IsRequired |
-|-------------|--------------|------------------------------------------|------------|
-| PostId      | string       | ID of the post you want to comment on    | Yes        |
-| Content     | string       | Contents of the comment                  | Yes        |
-| Support     | int          | Ignore and leave 0                       | Yes         |
-| RepliedTo   | Guid?        | Ignore                                   | Yes         |
-| UserName    | string       | Username of the user who is commenting   | Yes        |
-| Name        | string       | Name of the user who is commenting       | Yes        |
-| DateCreated | DateTime     | Do not leave null       | Yes        |
-| IsReply     | bool         | Set as false                             | Yes        |
-| HasReplies  | bool         | Set as false                             | Yes        |
-| ReplyCount  | int          | Set 0                                    | Yes        |
-| [MediaPath](#mediapath)   | string       | base64 of image                                        | No        |
+
+### MakeCommentDto
+| Property       | Type           | Required | Description                                                               |
+|----------------|----------------|----------|---------------------------------------------------------------------------|
+| PostId       | Guid         | Yes      | The ID of the parent post to which this comment belongs.                  |
+| Content      | string       | Yes      | user's comment.                                          |
+| RepliedTo    | Guid?        | No       | The ID of the parent comment if this comment is a reply to another comment.|
+| IsReply      | bool?        | No       | Indicates if this comment is a reply to another comment.                  |
+| PostMedia    | [MediaDto](/Docs/Media.md)?    | No       | Media associated with the comment (if any).                               |
 
 
-# Reply to Comment
-#### POST
-        api.toxiq.xyz/api/Comment/MakeComment
-        
-| Name        | Type      | Comment                                      | IsRequired |
-|-------------|-----------|----------------------------------------------|------------|
-| PostId      | string    | ID of the post you want to comment on        | Yes        |
-| Content     | string    | Contents of the comment                      | Yes        |
-| Support     | int       | Ignore and leave 0                           | Yes         |
-| RepliedTo   | Guid?     | ID of the comment you want to reply to       | Yes         |
-| UserName    | string    | Username of the user who is commenting       | Yes        |
-| Name        | string    | Name of the user who is commenting           | Yes        |
-| DateCreated | DateTime  | Do not leave null                            | Yes        |
-| IsReply     | bool      | Set as true                                  | Yes        |
-| HasReplies  | bool      | Set as false                                 | Yes        |
-| ReplyCount  | int       | Set 0                                        | Yes        |
-| [MediaPath](#mediapath)  | string       | base64 of image                                        | No        |
 
 
 # Get Comments / Replies
@@ -66,9 +44,3 @@ this method is for requesting a single comment
 
 #### GET
         api.toxiq.xyz/api/Comment/GetComment/{COMMENT_ID}
-
-# Notes
-### MediaPath 
-- when calling get comments endpoint the MediaPath might be null or it will return the url for the file requested.
-
-- when submitting comments devs can use the MediaPath to store image data. devs must ensure to only submit images that are jpeg and no larger then 240px 
