@@ -30,14 +30,12 @@
 | Name   | Type     | Comment                                                                                             | IsRequired |
 |--------|----------|-----------------------------------------------------------------------------------------------------|------------|
 | Id     | Guid     | either post_ID or comment_ID                                                                        | Yes        |
-| IsReply| bool     | If true, set Id to parent comment Id; else set Id to post Id                                        | Yes        |
-| Sort   | [SortType](/Enums/SortType.md) | Default is 0                                                                                        | Yes        |
-| Page   | int      | starts at 1 and not 0                                                                                       | Yes         |
-| Count  | int      | set to 30                                                                                      | Yes         |
+| IsReply| bool     | Default is false                                        | No        |
+| Sort   | [SortType](/Enums/SortType.md) | Default is 0                                                                                        | No        |
+| Page   | int      | Default is 1                                                                                       | No         |
+| Count  | int      | Default is 30                                                                                      | No         |
 
 - Page must always start at 1. Requesting for Page 0 will result in error
-
-- its best to request 30 comments at a time and load more as needed
 
 ### GetComment
 this method is for requesting a single comment
