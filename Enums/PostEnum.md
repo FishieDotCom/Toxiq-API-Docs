@@ -29,3 +29,4 @@ if there is no media make sure to always mark it as non
 | 1     | Image  | Image file    |
 | 2     | Video  | Video file    |
 | 3     | Audio  | Audio file    |
+| 4     | Sticker| Stickers must use MediaId instead if MediaPath when submitting |

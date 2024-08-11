@@ -10,6 +10,9 @@
 - [Color](/Endpoints/Color.md)
 - [Posts](/Endpoints/Posts.md)
 
+## Design Guidlines
+Read the following [Guidlines](/Docs/Design.md) before 
+
 ## Posts
 [Read Posts](/Docs/Posts.md)  
 [Posts API](/Endpoints/Posts.md)
