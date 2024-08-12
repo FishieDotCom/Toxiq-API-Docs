@@ -63,9 +63,11 @@ you can submit multiple media content per post now but it is limited to 4 posts 
 more infomation regarding [MediaDto](/Docs/Media.md)
 
 if post isnt marked as Spoiler or Ad client must send false
+
+**You cant Echo as a wall post**
 | Property       | Type                 | Required | Description                                                                                           |
 |----------------|----------------------|----------|-------------------------------------------------------------------------------------------------------|
-| Type         | [PostType](/Enums/PostEnum.md#post-type)           | Yes      | The type of the post (e.g., text, image, video).                                                       |
+| Type         | [PostType](/Enums/PostEnum.md#post-type)           | Yes      | The type of the post (e.g., text, burn, wall).                                                       |
 | Content      | string             | Yes      | The main content of the post.                                                                          |
 | IsSpoiler    | bool | Yes| Indicates if the post contains spoiler content (gross/gory/inappropriate content must be tagged). |
 | IsAd         | bool              | Yes       | Indicates if the post is an advertisement.|
