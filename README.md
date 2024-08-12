@@ -17,6 +17,9 @@ Read the following [Guidlines](/Docs/Design.md) before starting client developme
 [Handle Post Url](/Docs/Posts.md)  
 [Posts API](/Endpoints/Posts.md)
 
+## Echo
+Echoing is Toxiq's version of sharing  
+[Echoing basics](/Docs/Echo.md)
 ## Media  
 [Uploading Media](/Docs/Media.md)
 
