@@ -15,7 +15,8 @@ Read the following [Guidlines](/Docs/Design.md) before starting client developme
 
 ## Posts
 [Handle Post Url](/Docs/Posts.md)  
-[Posts API](/Endpoints/Posts.md)
+[Posts API](/Endpoints/Posts.md)  
+[TBH API](/Endpoints/TBH.md)
 
 ## Echo
 Echoing is Toxiq's version of sharing  
@@ -36,4 +37,6 @@ for more details refer to [Mention Docs](/Docs/Mentions.md)
 
 ## Auth Schema
 
+``` html 
 Authorization: Bearer {TOKEN}
+```
