@@ -5,6 +5,9 @@ Toxiq must stick to the same design regardless of platform so all users would ha
 ### Fonts
 [Roboto](https://fonts.google.com/specimen/Roboto)  
 
+### Social Preview
+refer to the following [docs](https://github.com/FishieDotCom/Toxiq-Assets?tab=readme-ov-file#social-preview) for infomation regarding social preview
+
 ### Icons
 Using the same Icons across Toxiq apps is a must as users expect the same icons to do the same task across platforms and apps  
 
