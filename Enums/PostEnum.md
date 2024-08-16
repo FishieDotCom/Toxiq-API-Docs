@@ -12,11 +12,12 @@
 
 | Value | Name    | Comment                          |
 |-------|---------|----------------------------------|
-| 0     | Wall    | A reply to a wall post    |
-| 1     | Text    | A normal post                |
-| 2     | Comment | A reply to a comment     |
-| 3     | Ad      | A reply that is an advertisement |
-| 4     | Note     | A reply to a Note |
+| 0     | Non    | Not a reply    |
+| 1     | Wall    | A reply to a wall post    |
+| 2     | Text    | A normal post                |
+| 3     | Comment | A reply to a comment     |
+| 4     | Ad      | A reply that is an advertisement |
+| 5     | Note     | A reply to a Note |
 
 
 # Media Type
