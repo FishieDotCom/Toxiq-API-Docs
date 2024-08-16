@@ -9,6 +9,7 @@
 - [Comment](/Endpoints/Comment.md)
 - [Color](/Endpoints/Color.md)
 - [Posts](/Endpoints/Posts.md)
+- [Notes](/Endpoints/Notes.md)
 
 ## Design Guidlines
 Read the following [Guidlines](/Docs/Design.md) before starting client development
@@ -16,7 +17,7 @@ Read the following [Guidlines](/Docs/Design.md) before starting client developme
 ## Posts
 [Handle Post Url](/Docs/Posts.md)  
 [Posts API](/Endpoints/Posts.md)  
-[TBH API](/Endpoints/TBH.md)
+[Note API](/Endpoints/Notes.md)
 
 ## Echo
 Echoing is Toxiq's version of sharing  
