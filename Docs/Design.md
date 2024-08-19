@@ -2,6 +2,9 @@
 ![Image](/Images/design.jpg)  
 Toxiq must stick to the same design regardless of platform so all users would have the same experiance regardless of the platform 
 
+### Figma 
+[Figma Design Files](https://www.figma.com/design/bHUKMe5lCrLMKzhCckjvPC/Toxiq-App?node-id=24-853&t=3LEsKjmq0bSqOVw0-0)
+
 ### Fonts
 [Roboto](https://fonts.google.com/specimen/Roboto)  
 
