@@ -4,13 +4,17 @@
 Toxiq uses markdown for all mentions 
 
 ```
-[@WhoIsFishie](user:🟥🕷️)
+[@WhoIsFishie](user:deb1faf7-e3ef-4c5c-90b6-0ab0f5ef8c45) //mention using user guid
+[@WhoIsFishie](user:WhoIsFishie) //mention using username
+[@WhoIsFishie](user:🟥🕷️) //mention using user emoji
 ```
+
+the reccomended method is to use guid
 
 ### Example
 
 input  
-```Hey [@WhoIsFishie](user:🟥🕷️) this is a test comment```
+```Hey [@WhoIsFishie](user:deb1faf7-e3ef-4c5c-90b6-0ab0f5ef8c45) this is a test comment```
 
 output  
 ```Hey @WhoIsFishie this is a test comment```

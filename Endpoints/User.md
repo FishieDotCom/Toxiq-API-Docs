@@ -60,6 +60,7 @@ this endpoint will return a requested user's profile
 #### GET
         api.toxiq.xyz/api/User/GetUser/{USERNAME}
         api.toxiq.xyz/api/User/GetUser/{URLENCODED_EMOJI}
+        api.toxiq.xyz/api/User/GetUser/{USERGUID}
 
 | Result       | Details                 |
 |--------------|-------------------------|
